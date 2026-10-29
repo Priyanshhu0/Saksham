@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-saksham-sidebar: #111111;
+  --color-saksham-bg: #F7F7F5;
+  --color-saksham-card: #FFFFFF;
+  --color-saksham-dark: #1A1A1A;
+  --color-saksham-hover: #EEEEEC;
+  --color-saksham-text: #111111;
+  --color-saksham-muted: #777777;
+  --color-saksham-border: #E5E5E5;
+  --color-saksham-critical: #DC2626;
+}
+
+@layer base {
+  :root {
+    --bg-main: #F7F7F5;
+    --bg-sidebar: #111111;
+    --bg-card: #FFFFFF;
+    --text-primary: #111111;
+    --text-secondary: #777777;
+    --border-color: #E5E5E5;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F7F7F5;
+    color: #111111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-mono, td.font-mono, th.font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-feature-settings: "tnum" 1;
+  }
+}
+
+/* Subtle clean monochrome utility classes */
+.monochrome-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  color: #111111;
+}
+
+.monochrome-input {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  color: #111111;
+}
+.monochrome-input:focus {
+  outline: none;
+  border-color: #111111;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AAAAAA;
+}
